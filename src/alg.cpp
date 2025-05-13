@@ -1,8 +1,8 @@
 // Copyright 2021 NNTU-CS
 int binarySearch(int len, int member_couple, int* arr, int low) {
   int high = len - 1;
-  int middle;
   while (low <= high) {
+    int middle;
     middle = (low + high) / 2;
     if (member_couple == arr[middle]) {
       return middle;
